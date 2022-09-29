@@ -1,0 +1,5 @@
+C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\obj\Debug\netcoreapp3.1\ProjectNumber_1.csproj.AssemblyReference.cache
+C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\obj\Debug\netcoreapp3.1\ProjectNumber_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\obj\Debug\netcoreapp3.1\ProjectNumber_1.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\obj\Debug\netcoreapp3.1\ProjectNumber_1.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\obj\Debug\netcoreapp3.1\ProjectNumber_1.csproj.CoreCompileInputs.cache
