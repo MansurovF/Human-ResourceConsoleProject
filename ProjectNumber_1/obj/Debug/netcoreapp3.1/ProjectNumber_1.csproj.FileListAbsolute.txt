@@ -3,3 +3,12 @@ C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\obj\Debug\netcoreap
 C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\obj\Debug\netcoreapp3.1\ProjectNumber_1.AssemblyInfoInputs.cache
 C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\obj\Debug\netcoreapp3.1\ProjectNumber_1.AssemblyInfo.cs
 C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\obj\Debug\netcoreapp3.1\ProjectNumber_1.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\bin\Debug\netcoreapp3.1\ProjectNumber_1.exe
+C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\bin\Debug\netcoreapp3.1\ProjectNumber_1.deps.json
+C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\bin\Debug\netcoreapp3.1\ProjectNumber_1.runtimeconfig.json
+C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\bin\Debug\netcoreapp3.1\ProjectNumber_1.runtimeconfig.dev.json
+C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\bin\Debug\netcoreapp3.1\ProjectNumber_1.dll
+C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\bin\Debug\netcoreapp3.1\ProjectNumber_1.pdb
+C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\obj\Debug\netcoreapp3.1\ProjectNumber_1.dll
+C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\obj\Debug\netcoreapp3.1\ProjectNumber_1.pdb
+C:\Users\LENOVO\source\repos\ProjectNumber_1\ProjectNumber_1\obj\Debug\netcoreapp3.1\ProjectNumber_1.genruntimeconfig.cache
