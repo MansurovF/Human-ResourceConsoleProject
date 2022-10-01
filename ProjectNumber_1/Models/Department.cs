@@ -45,9 +45,10 @@ namespace ProjectNumber_1
             }
             set
             {
-                if (Name.Length>2)
+                if (value.Length<2)
                 {
-                    return;
+                    Console.WriteLine("duzgun ad daxil edin:");
+                    value = Console.ReadLine();
                 }
                 else
                 {
