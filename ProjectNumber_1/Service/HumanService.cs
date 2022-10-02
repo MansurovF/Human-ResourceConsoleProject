@@ -21,18 +21,8 @@ namespace ProjectNumber_1
 
         public Department[] GetDepartments()
         {
-            Department[] department = new Department[0];
-            foreach (Department department1 in _departments)
-            {
-                if (department!=null)
-                {
-                    Array.Resize(ref department, departments.Length + 1);
-                    departments[departments.Length - 1] = department1;
-                    
-                }
-                
-            }
-            return department; 
+            
+            return _departments; 
         }
 
         public void EditDepartments(string name, string newName)
@@ -54,10 +44,16 @@ namespace ProjectNumber_1
 
         public void AddEmployee(string fullname, string position, double salary, string departmentname)
         {
-
-            Department department = new Department(name: departmentname, workerlimit: workerlimit, salarylimit: salarylimit);
-            Array.Resize(ref _departments, _departments.Length + 1);
-            _departments[_departments.Length - 1] = department;
+            foreach (Department item1 in _departments)
+            {
+                if (item1.Name.ToUpper() == departmentname.ToUpper())
+                {
+                    Employee employee = new Employee(fullname, position, salary, departmentname);
+                    Array.Resize(ref item1.Employees, item1.Employees.Length + 1);
+                    item1.Employees[item1.Employees.Length - 1] = employee;
+                }
+            }
+            
         }
 
         public void RemoveEmployee(string no, string departmentName)

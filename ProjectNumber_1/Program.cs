@@ -9,11 +9,16 @@ namespace ProjectNumber_1
     {
         static void Main(string[] args)
         {
+            // commit test
             IHumanResourceManager HumanService = new HumanService();
             do
             {
+               // Console.BackgroundColor = ConsoleColor.DarkBlue;
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("Welcome to the *****Insan Resource Project*****");
+                Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Etmek istediyiniz emeliyatin nomresini daxil edin:");
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("\n1- Departameantlerin siyahisini gostermek");
                 Console.WriteLine("\n2-Departamenet yaratmaq");
                 Console.WriteLine("\n3-Departmanetde deyisiklik etmek");
@@ -81,6 +86,8 @@ namespace ProjectNumber_1
             }
             else
             {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Department yoxdur elave edin");
                 return;
             }
@@ -93,6 +100,8 @@ namespace ProjectNumber_1
             string Name = Console.ReadLine();
             while (Name.Length < 2)
             {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Duzgun adi daxil edin,minimun 2 herfden ibaret olmalidir");
                 Name = Console.ReadLine();
                 continue;
@@ -139,21 +148,23 @@ namespace ProjectNumber_1
         {
             if (HumanService.Departments.Length <= 0)
             {
-                Console.WriteLine("Bele bir departament yoxdur");
+                Console.WriteLine("Edit edile bilecek department yoxdur. Evvelce department elave edin");
+                return;
             }
             Console.WriteLine("Departamentlerin siyahilari");
             Console.WriteLine("*******************");
             foreach (Department item in HumanService.Departments)
             {
+                Console.WriteLine(item.Name);
                 Console.WriteLine("****************");
             }
             Console.WriteLine("Deyismek istediyiniz departamentin adini qeyd edin");
-            //reEntercurrentName:
+
             string currentName = Console.ReadLine();
             if (string.IsNullOrWhiteSpace(currentName))
             {
                 Console.WriteLine("Dogru qeyd edin");
-
+                currentName = Console.ReadLine();
             }
             bool find = false;
             string newName = string.Empty;
@@ -162,28 +173,37 @@ namespace ProjectNumber_1
                 if (item.Name.ToLower() == currentName.ToLower())
                 {
                     Console.WriteLine("Departmentin yeni adini daxil edin");
-                    //reEnterNewName:
                     newName = Console.ReadLine();
                     if (string.IsNullOrWhiteSpace(newName) || newName.Length < 2)
                     {
                         Console.WriteLine("Duzgun yazin ");
+                        newName = Console.ReadLine();
                     }
                     find = true;
                     break;
                 }
+               
+            }
+            if (find == true)
+            {
                 HumanService.EditDepartments(currentName, newName);
             }
+            else
+            {
+                Console.WriteLine("Bu adda department tapilmadi");
+            }
+           
 
         }
         static void RemoveEmployee(ref IHumanResourceManager HumanService)
         {
+            Console.WriteLine(" Silmek istediyiniz  iscinin departamentinin adini qeyd edin");
             foreach (Department item in HumanService.Departments)
             {
-                Console.WriteLine(" Silmek istediyiniz  iscinin departamentinin adini qeyd edin");
                 Console.WriteLine($"{item}");
-
+            }
                 string DepartamentName = Console.ReadLine();
-                string employeeName = Console.ReadLine();
+                //string employeeName = Console.ReadLine();
                 while (true)
                 {
                     foreach (Department departamantName in HumanService.Departments)
@@ -191,7 +211,7 @@ namespace ProjectNumber_1
                         if (departamantName.Name.ToLower() == DepartamentName.ToLower())
                         {
                             Console.WriteLine("Iscinin nomresini daxil edin");
-                            employeeName = Console.ReadLine();
+                            string employeeName = Console.ReadLine();
 
                             while (true)
                             {
@@ -216,7 +236,7 @@ namespace ProjectNumber_1
 
                 }
 
-            }
+            
 
 
 
@@ -304,7 +324,7 @@ namespace ProjectNumber_1
                 fullName = Console.ReadLine();
             }
             Console.WriteLine("Iscinin vezifesinin daxil edin:");
-            //reEnterPositionName:
+
             string posotionName = Console.ReadLine();
             while (string.IsNullOrWhiteSpace(posotionName) || posotionName.Length < 2)
             {
@@ -312,7 +332,7 @@ namespace ProjectNumber_1
                 posotionName = Console.ReadLine();
             }
             Console.WriteLine(" Elave etmek istediyiniz iscinin maasinin daxil edin:");
-            //reEnterSalary:
+
             string Salary = Console.ReadLine();
             double checkSalary = 0;
             while (!double.TryParse(Salary, out checkSalary) || checkSalary < 250)
