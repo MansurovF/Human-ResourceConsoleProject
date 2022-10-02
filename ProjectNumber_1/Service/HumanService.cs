@@ -99,6 +99,7 @@ namespace ProjectNumber_1
 
         }
         public Department[] departments => departments;
+        //public Department[] employees => departments;
         public void AddDepartment(string departmentname, double workerlimit, double salarylimit)
         {
             Department department = new Department(departmentname, workerlimit, salarylimit);

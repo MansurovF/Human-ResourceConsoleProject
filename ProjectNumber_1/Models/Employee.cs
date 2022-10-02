@@ -62,8 +62,8 @@ namespace ProjectNumber_1
             }
             set
             {
-                string[] array = value.Split(' ');
-                while (array.Length >= 2)
+                //string[] array = value.Split(' ');
+                while (value.Length >= 2)
                 {
                     return;
                 }

@@ -10,6 +10,7 @@ namespace ProjectNumber_1
         static void Main(string[] args)
         {
             // commit test
+            // commit test 2
             IHumanResourceManager HumanService = new HumanService();
             do
             {
@@ -315,7 +316,7 @@ namespace ProjectNumber_1
         static void AddEmployee(ref IHumanResourceManager HumanService)
         {
             Console.WriteLine("Daxil etmek istediyiniz iscinin ad ve soyadini daxil edin");
-            //reEnterFullname:
+            
             string fullName = Console.ReadLine();
             string[] full = fullName.Split(' ');
             while (string.IsNullOrWhiteSpace(fullName) || fullName.Length < 2)
